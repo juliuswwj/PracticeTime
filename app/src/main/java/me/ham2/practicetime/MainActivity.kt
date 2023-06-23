@@ -142,7 +142,7 @@ class MainActivity : ComponentActivity() {
         if(music > 0) {
             music -= 1
             total += 1
-            idle = 0
+            if(idle > 0) idle -= 1
         } else {
             idle += 1
             if(idle >= MAX_IDLE) {
